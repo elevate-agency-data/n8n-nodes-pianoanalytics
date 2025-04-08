@@ -1,0 +1,20 @@
+{
+  "node": "n8n-nodes-pianoanalytics.PianoAnalytics",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": [
+    "PianoAnalytics"
+  ],
+  "resources": {
+    "credentialDocumentation": [
+      {
+        "url": "https://developers.atinternet-solutions.com/piano-analytics/"
+      }
+    ],
+    "primaryDocumentation": [
+      {
+        "url": "https://developers.atinternet-solutions.com/piano-analytics/"
+      }
+    ]
+  }
+}
