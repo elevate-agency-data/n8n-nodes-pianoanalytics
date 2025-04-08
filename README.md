@@ -36,13 +36,13 @@ To use this node, you need a Piano Analytics API key with access to Piano Analyt
 This node supports the following operations within Piano Analytics:  
 
 * **Collection API**
-    - Post Data
+    - Sends events directly with the Collection API
 * **Extraction API**
-    - Get Data
-    - Get Row Count
-    - Get Total
+    - Gets the data of a query
+    - Gets the number of results of a query
+    - Gets the total for each metric
 * **Measurement API**
-    - Send Measurement
+    - Sends measurements with the Measurement API
 
 Retrieve information from the [Piano Analytics API](https://developers.atinternet-solutions.com/piano-analytics/). 
 

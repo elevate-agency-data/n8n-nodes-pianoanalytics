@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-pianoanalytics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node N8N to interact with Piano Analytics",
   "keywords": [
     "n8n-community-node-package",

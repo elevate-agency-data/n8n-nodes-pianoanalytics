@@ -35,9 +35,9 @@ export class PianoAnalytics implements INodeType {
 				type: 'options',
 				noDataExpression: true,
 				options: [
-					{ name: 'Collection API', value: 'collectionAPI', description: 'Send events directly with Collection API, from any platform you want' },
-					{ name: 'Extraction API', value: 'extractAPI', description: 'Retrieve your fully processed data from Piano Analytics' },
-					{ name: 'Measurement API', value: 'measurementAPI', description: 'Send measurements directly with Measurement API, from any platform you want' }
+					{ name: 'Collection API', value: 'collectionAPI', description: 'Sends events directly with the Collection API, from any platform they want' },
+					{ name: 'Extraction API', value: 'extractAPI', description: 'Retrieves their fully processed data from Piano Analytics' },
+					{ name: 'Measurement API', value: 'measurementAPI', description: 'Sends measurements directly with the Measurement API, from any platform they want' }
 			  ],
 				default: 'extractAPI',
 				required: true,
@@ -49,7 +49,7 @@ export class PianoAnalytics implements INodeType {
 				noDataExpression: true,
 				displayOptions: { show: { resource: ['collectionAPI'] } },
 				options: [					
-					{ name: 'Post Data', value: 'collectionAPIPost', action:'Send events directly with collection API', description: 'Send events directly with collection API' },
+					{ name: 'Post Data', value: 'collectionAPIPost', action:'Sends events directly with the collection API', description: 'Sends events directly with the Collection API' },
 				],
 				default: 'collectionAPIPost',
 			},	
@@ -60,9 +60,9 @@ export class PianoAnalytics implements INodeType {
 				noDataExpression: true,
 				displayOptions: { show: { resource: ['extractAPI'] } },
 				options: [					
-					{ name: 'Get Data', value: 'extractAPIGetData', action:'Get the data of a query', description: 'Get the data of a query' },
-					{ name: 'Get Row Count', value: 'extractAPIGetRowCount', action:'Get the number of results of a query', description: 'Get the number of results of a query' },
-					{ name: 'Get Total', value: 'extractAPIGetTotal', action:'Get the total for each metric', description: 'Get the total for each metric' },
+					{ name: 'Get Data', value: 'extractAPIGetData', action:'Gets the data of a query', description: 'Gets the data of a query' },
+					{ name: 'Get Row Count', value: 'extractAPIGetRowCount', action:'Gets the number of results of a query', description: 'Gets the number of results of a query' },
+					{ name: 'Get Total', value: 'extractAPIGetTotal', action:'Gets the total for each metric', description: 'Gets the total for each metric' },
 				],
 				default: 'extractAPIGetData',
 			},
@@ -73,7 +73,7 @@ export class PianoAnalytics implements INodeType {
 				noDataExpression: true,
 				displayOptions: { show: { resource: ['measurementAPI'] } },
 				options: [					
-					{ name: 'Send Measurement', value: 'measurementAPIPost', action:'Send measurements with measurement API', description: 'Send measurements with measurement API' },
+					{ name: 'Send Measurement', value: 'measurementAPIPost', action:'Send measurements with measurement API', description: 'Sends measurements with the Measurement API' },
 				],
 				default: 'measurementAPIPost',
 			},	  
