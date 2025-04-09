@@ -23,7 +23,7 @@ export class PianoAnalytics implements INodeType {
 		// @ts-ignore - node-class-description-outputs-wrong
 		outputs: [{ type: NodeConnectionType.Main }],        
 		usableAsTool: true,
-		credentials: [{	name: 'PianoAnalyticsApi', required: true}],
+		credentials: [{	name: 'pianoAnalyticsApi', required: true}],
 		requestDefaults:{
 			baseURL: 'https://api.atinternet.io/v3/data/getData',
 			headers:{ 'Content-Type': 'application/json' }
@@ -192,7 +192,7 @@ export class PianoAnalytics implements INodeType {
 	async execute(this: IExecuteFunctions) {
 		const items = this.getInputData();
 		const returnData = [];
-		const credentials = await this.getCredentials('PianoAnalyticsApi');
+		const credentials = await this.getCredentials('pianoAnalyticsApi');
     if (!credentials) { throw new ApplicationError('Missing Piano Analytics API Credentials'); }
 		
 		const accessKey = credentials.accessKey as string;
@@ -308,9 +308,6 @@ export class PianoAnalytics implements INodeType {
           method: 'POST',
           body: data
         };
-
-				console.log('url : ' + url)
-				console.log('requestOptions : ' + JSON.stringify(requestOptions))
 
 				const responseData = await this.helpers.request(requestOptions);
 
